@@ -21,9 +21,9 @@ const plane = new THREE.Mesh(planeGeometry, planeMaterial);
 scene.add(plane);
 
 const geometry = new THREE.BoxGeometry(1, 1, 1);
-geometry.translate(0, 0, 0.5);
 const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
 const cube = new THREE.Mesh(geometry, material);
+cube.position.z = 0.5;
 scene.add(cube);
 
 camera.position.z = 5;
