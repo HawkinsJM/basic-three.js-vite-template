@@ -32,7 +32,5 @@ camera.up.set(0, 0, 1);
 camera.lookAt(0, 0, 0);
 
 function animate() {
-  cube.rotation.z += 0.01;
-
   renderer.render(scene, camera);
 }
