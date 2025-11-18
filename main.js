@@ -18,12 +18,13 @@ const planeMaterial = new THREE.MeshBasicMaterial({
   color: 0xcccccc
 });
 const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+plane.rotation.x = -Math.PI / 2;
 scene.add(plane);
 
 const geometry = new THREE.BoxGeometry(1, 1, 1);
 const material = new THREE.MeshBasicMaterial({ color: "rgba(40, 125, 12, 1)" });
 const cube = new THREE.Mesh(geometry, material);
-cube.position.z = 0.5;
+cube.position.y = 0.5;
 scene.add(cube);
 
 camera.position.z = 5;
